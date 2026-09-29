@@ -245,8 +245,40 @@ function numero_invertido() {
     console.log("El número " + numero + " invertido es " + numero_invertido);
 }
 
-numero_invertido();
+// numero_invertido();
 
 // Ejemplo 18: Muestra todos los divisores de un numero solicitado por pantalla
 
+function divisores() {
+    let num = parseInt(window.prompt("Indica un número: "));
+    console.log("Los divisores de " + num + " son: ")
+    for(let i = 0; i < num; i++) {
+        if(num % i == 0) {
+            console.log(i);
+        }
+    }
+}
+
+// divisores();
+
 // Ejemplo 19: Numero perfecto: Pide un número y determina si es perfecto. Un número es perfecto cuando la suma de sus divisores propios sea igual al propio número. Por ejemplo, 6 es perfecto porque 1 + 2 + 3 = 6.
+
+function numero_perfecto() {
+    let num = parseInt(window.prompt("Indica un número: "));
+    let suma = 0;
+
+    for(let i = 0; i < num; i++) {
+        if(num % i == 0) {
+            console.log(i);
+            suma = suma + i;
+        }
+    }
+
+    if(num == suma) {
+        console.log("El número es perfecto.")
+    } else {
+        console.log("El número no es perfecto.")
+    }
+}
+
+numero_perfecto();
