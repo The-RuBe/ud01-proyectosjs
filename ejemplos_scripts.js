@@ -281,4 +281,4 @@ function numero_perfecto() {
     }
 }
 
-numero_perfecto();
+// numero_perfecto();
